@@ -74,7 +74,7 @@ export default function ContractCallPage() {
       <h1 className="text-xl font-bold py-10">Proposals</h1>
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Get Proposal Data</CardTitle>
+          <CardTitle className="text-lg">指定されたIDの提案議題</CardTitle>
           <CardDescription>
             指定されたIDのProposalデータをコントラクトから読み取ります。
           </CardDescription>
