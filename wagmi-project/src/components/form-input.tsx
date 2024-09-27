@@ -1,7 +1,7 @@
-import {
-  type UseFormReturn,
-  type FieldValues,
-  type Path,
+import type {
+  UseFormReturn,
+  FieldValues,
+  Path,
 } from "react-hook-form";
 
 import {

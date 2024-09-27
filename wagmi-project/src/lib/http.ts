@@ -1,7 +1,7 @@
 import { QueryClient } from "@tanstack/react-query";
 
 import { getPinataFormat } from "./helper";
-import { type proposalSchemaType } from "./schema/schema";
+import type { proposalSchemaType } from "./schema/schema";
 
 export const queryClient = new QueryClient();
 

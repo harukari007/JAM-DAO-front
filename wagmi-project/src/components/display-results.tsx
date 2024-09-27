@@ -25,6 +25,7 @@ function RenderObjects(result: { [key: string]: any } | bigint | undefined) {
           <div>{RenderObjects(value)}</div>
         </div>
       );
+    // biome-ignore lint/style/noUselessElse: <explanation>
     } else {
       return (
         <div key={key} className="ml-5 my-2">
@@ -40,6 +41,7 @@ export default function DisplayResult(returnData: DisplayResultProps) {
   const { status, result, error } = returnData;
   if (status === "failure") {
     return <div className="w-[1100px] break-words">{error.toString()}</div>;
+  // biome-ignore lint/style/noUselessElse: <explanation>
   } else if (status === undefined) {
     return null;
   }

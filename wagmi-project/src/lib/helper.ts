@@ -2,9 +2,9 @@ import { CID } from "multiformats";
 import { base32 } from "multiformats/bases/base32";
 import { create } from "multiformats/hashes/digest";
 
-import { toHex, fromHex, Hex } from "viem";
+import { toHex, fromHex, type Hex } from "viem";
 
-import { type proposalSchemaType } from "./schema/schema";
+import type { proposalSchemaType } from "./schema/schema";
 
 export function getPinataFormat(data: proposalSchemaType) {
   return {

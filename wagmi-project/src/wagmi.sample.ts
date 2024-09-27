@@ -2,7 +2,7 @@ import { http, createConfig } from "wagmi";
 import { mainnet, sepolia, localhost, anvil } from "wagmi/chains";
 import { mock } from "wagmi/connectors";
 
-import { type Address } from "viem";
+import type { Address } from "viem";
 import { abi } from "@/lib/abi/TextDAOFacade";
 import { account } from "@/lib/account";
 
@@ -35,6 +35,7 @@ export const config = createConfig({
 
 
 export const TextDAOFacade = {
+  // biome-ignore lint/style/noNonNullAssertion: <explanation>
   address: process.env.NEXT_PUBLIC_CONTRACT_ADDR! as Address,
   abi,
   // account,
