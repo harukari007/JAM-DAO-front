@@ -49,7 +49,7 @@ const INPUTS = [
     placeholder: "123",
     _type: "number",
     description:
-      "Reps はある proposal に fork, vote 可能な DAO 参加者のサブセットです。人数を指定してください。",
+      "Reps は、ある提案に対して、分岐（fork）したり投票したりできる DAO 参加者のグループのことです。",
   },
   {
     name: "pConfigSchema.quorumScore",
