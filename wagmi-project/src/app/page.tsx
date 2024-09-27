@@ -10,12 +10,12 @@ function App() {
             右上の MetaMask ボタンを押してウォレットをコネクトする（チェーンを
             Sepolia にしてください）
           </li>
-          <li>Initialize から初期設定を済ませる</li>
-          <li>Propose から提案を作成する</li>
-          <li>Proposalから作成したProposeが取得できるか確認する</li>
-          <li>MemberJoin から自分のアカウントを登録する</li>
-          <li>Membersから登録した自分のアカウントが取得できるか確認する</li>
-          <li>Vote から提案に投票を行う</li>
+          <li>初期設定を済ませる</li>
+          <li>提案作成から議題を作成する</li>
+          <li>提案から作成した提案議題が取得できるか確認する</li>
+          <li>JAM‐DAO登録から自分のアカウントを登録する</li>
+          <li>JAM‐DAO参加メンバーから登録した自分のアカウントが取得できるか確認する</li>
+          <li>投票から提案に投票を行う</li>
         </ol>
       </article>
     </div>
