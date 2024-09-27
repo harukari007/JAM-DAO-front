@@ -18,7 +18,7 @@ import {
 import { useToast } from "./ui/use-toast";
 
 import paths from "@/lib/paths";
-import logo from "public/rectangular_logo_only.png";
+import logo from "public/JapaneseExcellentMarket.webp";
 
 export default function Navbar() {
   const account = useAccount();
@@ -35,7 +35,7 @@ export default function Navbar() {
             className="flex items-center gap-2 font-semibold"
           >
             <Image src={logo} alt="Logo" width={40} height={40} priority />
-            <span>Blockchain Innovation</span>
+            <span>Japanese Excellent Market</span>
           </Link>
         </nav>
         <div>
