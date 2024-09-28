@@ -1,0 +1,3 @@
+# Vercel deployment ignores
+.env
+.env.*
