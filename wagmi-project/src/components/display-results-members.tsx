@@ -47,21 +47,20 @@ export default function DisplayResultMembers(returnData: DisplayResultMembersPro
   if (result !== undefined) {
     console.log("result: %o", result);
 
-    if (result.hasOwnProperty('addr')) {
+    if (typeof result === 'object' && result !== null && 'id' in result) {
       console.log("result.id: %o", result.id);
       console.log("result.addr: %o", result.addr);
 
       if (result.id >= Number.MAX_SAFE_INTEGER) {
-        return <div><span style={{ color: 'red' }}>No data found</span></div>;
+        if (result.id >= Number.MAX_SAFE_INTEGER) {
+          return <div><span style={{ color: 'red' }}>No data found</span></div>;
+        }
+        return <div>ID: {result.id + ""}<br />address: {result.addr}</div>;
       }
-      return <div>ID: {result.id + ""}<br />address: {result.addr}</div>;
+    } else {
+      return <div><span style={{ color: 'red' }}>No data found</span></div>;
     }
-  } else {
-    return <div><span style={{ color: 'red' }}>No data found</span></div>;
+
+    return <div>{RenderObjects(result)}</div>;
   }
-
-
-  // return <div>{RenderObjects(result)}</div>;
-
-  return <div>{RenderObjects(result)}</div>;
 }
