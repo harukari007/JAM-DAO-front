@@ -18,6 +18,8 @@ const DEFAULT_VALUES = {
   pid: 0,
 };
 
+startLine: 21;
+endLine: 89;
 export default function VotePage() {
   const { toast } = useToast();
   const { isPending, writeContract } = useWriteContract({
