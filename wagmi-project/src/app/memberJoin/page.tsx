@@ -40,7 +40,7 @@ const DEFAULT_VALUES = {
   pid: 0, // プロジェクトID
   candidates: {
     id: 0, // 候補者ID
-    addr: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266", // 候補者のEthereumアドレス
+    addr: "0x1234567890abcdef" as `0x${string}`, // 型アサーションを追加
   },
 };
 
