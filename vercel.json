@@ -1,7 +1,0 @@
-{
-  "env": {
-    "NEXT_PUBLIC_CONTRACT_ADDRESS": "0x479E7BcBdBF126D8d5B9db44c38f02BA01cA6BC5",
-    "NEXT_PUBLIC_CHAIN_ID": "11155111",
-    "NEXT_PUBLIC_RPC_URL": "https://eth-sepolia.g.alchemy.com/v2/KSIhefho68WxyBFvutqcfKpR4OwBGFe7"
-  }
-}
