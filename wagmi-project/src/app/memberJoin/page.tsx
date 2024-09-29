@@ -35,11 +35,12 @@ const INPUTS = [
   },
 ];
 
+// デフォルト値の定義
 const DEFAULT_VALUES = {
-  pid: 0,
+  pid: 0, // プロジェクトID
   candidates: {
-    id: 0,
-    addr: "",
+    id: 0, // 候補者ID
+    addr: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266", // 候補者のEthereumアドレス
   },
 };
 
@@ -56,9 +57,10 @@ export default function MemberJoinPage() {
     },
   });
 
+  // フォームの初期化
   const form = useForm<memberJoinSchemaType>({
-    resolver: zodResolver(memberJoinSchema),
-    defaultValues: DEFAULT_VALUES,
+    resolver: zodResolver(memberJoinSchema), // Zodスキーマを使用したバリデーション
+    defaultValues: DEFAULT_VALUES, // フォームのデフォルト値
   });
 
   function handleSubmit(data: memberJoinSchemaType) {
