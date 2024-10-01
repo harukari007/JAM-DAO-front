@@ -48,15 +48,13 @@ export default function ContractCallPage() {
     contracts: [
       {
         ...TextDAOFacade,
-        // TODO ここに関数名を入れる
-        // ここに引数を入れる．
-      }
+        functionName: "getMember",
+        args: [BigInt(memberID)],
+      },
     ],
   });
 
-
   const [memberInfo] = memberData || [];
-
 
   function getMemberData(data: contractCallMemberIdSchemaType) {
     setMemberID(data.memberID);

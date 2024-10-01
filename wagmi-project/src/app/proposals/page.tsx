@@ -64,6 +64,7 @@ export default function ContractCallPage() {
   const [proposalHeaders, nextProposalId] = proposalData || [];
 
   function getProposalData(data: contractCallPidSchemaType) {
+    console.log("data.pid: %o", data.pid);
     setPid(data.pid);
     proposalRefetch();
   }

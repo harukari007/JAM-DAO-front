@@ -45,8 +45,8 @@ export default function VotePage() {
     writeContract(
       {
         ...TextDAOFacade,
-        functionName: "voteCmds", // ここに関数名を入れる
-        args: [args.proposalId, args.headerIds], // ここに引数を入れる
+        functionName: "voteHeaders",
+        args: [args.proposalId, args.headerIds],
       },
       {
         onSuccess: (data) => {
